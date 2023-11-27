@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estancia 38</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="app-header">
+        <div class="logo">
+            <img src="./assets/img/Logoestancia.png" alt="Estancia38">
+        </div> 
+        <div class="datos">
+            <!-- <h1>Estancia38</h1> -->
+            <p id="verMasTexto" class="ver-mas-texto">Ver más</p>
+            
+        </div>
+
+
+        <div class="informacion-deslizante">
+            <div class="cerrar" id="cerrar">&times;</div>
+            <div class="informacion-contenido">
+                <h3>Estancia 38</h3>
+                <p>
+                    <object data="./assets/svg/location.svg" type="image/svg+xml" class="icon-svg"></object>
+                    Ruta 38, km 1131
+                </p>
+                <p>
+                    <object data="./assets/svg/reloj.svg" type="image/svg+xml" class="icon-svg"></object>
+                    10:00 - 16:00
+                </p>
+                <p>
+                    <object data="./assets/svg/telefono.svg" type="image/svg+xml" class="icon-svg"></object>
+                    0380 422-1878
+                </p>
+                <p>
+                    <object data="./assets/svg/correo.svg" type="image/svg+xml" class="icon-svg"></object>
+                    <a href="mailto:">leonardo2brigido@gmail.com</a> 
+                </p>
+                <div class="redes">
+                    <a href="https://api.whatsapp.com/send?phone=3804375709"><img src="./assets/svg/whatsapp.svg" alt="Whatsapp"></a>
+                    <a href="https://www.instagram.com/estancia38restaurante/"><img src="./assets/svg/instagram.svg" alt="Whatsapp"></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="contenido">
+        <div class="buscador"></div>
+        <div class="categorias">
+
+        <div class="burbuja-container" data-target="seccion1">
+            <div class=burbujas data-target="seccion1" id="menuDelDiaIcono">
+                <img class="svg-Burbuja" src="./assets/svg/menudia.svg" alt="Menú del día">
+            </div>
+            <p>Menu del dia</p>
+        </div>
+
+        
+            <div class="burbuja-container" data-target="seccion2">
+                    <div class=burbujas data-target="seccion2" id="entradasIcono">
+                        <img class="svg-Burbuja" src="./assets/svg/entradas.svg" alt="Menú del día">
+                    </div>
+                    <p>Entradas</p>
+            </div>
+    
+        
+
+            <div class="burbuja-container" data-target="seccion3">
+                <div class=burbujas data-target="seccion3" id="milanesasIcono">
+                    <img class="svg-Burbuja" src="./assets/svg/milanesa.svg" alt="Menú del día">
+                </div>
+                <p>Milanesas</p>
+            </div>
+
+        <div class="burbuja-container" data-target="seccion4">
+                <div class=burbujas data-target="seccion4" id="entrePanesIcono">
+                    <img class="svg-Burbuja" src="./assets/svg/entrepanes.svg" alt="Menú del día">
+                </div>
+                <p>Entre panes</p>
+        </div>
+
+            <div class="burbuja-container" data-target="seccion5">
+                <div class=burbujas data-target="seccion5" id="pastasIcono">
+                    <img class="svg-Burbuja" src="./assets/svg/pasta.svg" alt="Menú del día">
+                </div>
+                <p>Pastas</p>
+            </div >
+
+            <div class="burbuja-container" data-target="seccion6">
+                <div class="burbujas" id="ensaladasIcono" data-target="seccion6">
+                    <img class="svg-Burbuja" src="./assets/svg/ensaladas.svg" alt="Menú del día">
+                </div>
+                <p>Ensaladas</p>
+            </div >
+
+
+            <div class="burbuja-container" data-target="seccion7">
+                <div class=burbujas data-target="seccion7" id="guarnicionesIcono">
+                    <img class="svg-Burbuja" src="./assets/svg/guarniciones.svg" alt="Menú del día">
+                </div>
+                <p>Guarniciones</p>
+            </div>
+
+
+        <div class="burbuja-container" data-target="seccion8">
+                <div class=burbujas data-target="seccion8" id="bebidasIcono">
+                    <img class="svg-Burbuja" src="./assets/svg/bebidas.svg" alt="Menú del día">
+                </div>
+                <p>Bebidas</p>
+        </div>
+
+            <div class="burbuja-container" data-target="seccion9">
+                <div class=burbujas data-target="seccion9" id="vinosIcono">
+                    <img class="svg-Burbuja" src="./assets/svg/vino.svg" alt="Menú del día">
+                </div>
+                <p>Vinos</p>
+            </div >
+
+            <div class="burbuja-container" data-target="seccion10">
+                <div class=burbujas data-target="seccion10" id="cervezasIcono">
+                    <img class="svg-Burbuja" src="./assets/svg/cerveza.svg" alt="Menú del día">
+                </div>
+                <p>Cervezas</p>
+            </div>
+        </div>
+        <div class="productos">
+            <h3 id="seccion1">Menu del dia</h3>
+                <div class="producto">
+                    <div class="info">
+                        <h4 class="nombre">Menu del dia</h4>
+                        <p class="descripcion">Pregunta por el menu del dia</p>
+                        <div class="precio">$5555</div>
+                    </div>
+                    <div class="foto"></div>
+                </div>
+            <h3 id="seccion2">Entradas</h3>
+
+            <div class="producto">
+                <div class="info">
+                    <h4 class="nombre">Picada para 2</h4>
+                    <p class="descripcion">Jamon, queso y aceitunas</p>
+                    <div class="precio">$5555</div>
+                </div>
+                <div class="foto"></div>
+            </div>
+
+            <div class="producto">
+                <div class="info">
+                    <h4 class="nombre">Picada para 4</h4>
+                    <p class="descripcion">Jamon, queso y aceitunas</p>
+                    <div class="precio">$5555</div>
+                </div>
+                <div class="foto"></div>
+            </div>
+
+
+            <h3 id="seccion3">Milanesas</h3>
+
+            <div class="producto">
+                <div class="info">
+                    <h4 class="nombre">Milanesa comun</h4>
+                    <p class="descripcion">Milanesa con guarnicion a eleccion</p>
+                    <div class="precio">$5555</div>
+                </div>
+                <div class="foto"></div>
+            </div>
+
+            <div class="producto">
+                <div class="info">
+                    <h4 class="nombre">Milanesa Napolitana</h4>
+                    <p class="descripcion">Milanesa con salsa jamon y queso, con guarnicion a eleccion</p>
+                    <div class="precio">$5555</div>
+                </div>
+                <div class="foto"></div>
+            </div>
+
+            <div class="producto">
+                <div class="info">
+                    <h4 class="nombre">Milanesa a caballo</h4>
+                    <p class="descripcion">Milanesa con huevo frito y guarnicion a eleccion</p>
+                    <div class="precio">$5555</div>
+                </div>
+                <div class="foto"></div>
+            </div>
+        
+            <div class="producto">
+                <div class="info">
+                    <h4 class="nombre">Suprema comun</h4>
+                    <p class="descripcion">Milanesa de pollo con guarnicion a eleccion</p>
+                    <div class="precio">$5555</div>
+                </div>
+                <div class="foto"></div>
+            </div>
+
+            <div class="producto">
+                <div class="info">
+                    <h4 class="nombre">Suprema Napolitana</h4>
+                    <p class="descripcion">Milanesa de pollo con salsa jamon y queso, con guarnicion a eleccion</p>
+                    <div class="precio">$5555</div>
+                </div>
+                <div class="foto"></div>
+            </div>
+
+            <div class="producto">
+                <div class="info">
+                    <h4 class="nombre">Suprema a caballo</h4>
+                    <p class="descripcion">Milanesa de pollo con huevo frito y guarnicion a eleccion</p>
+                    <div class="precio">$5555</div>
+                </div>
+                <div class="foto"></div>
+            </div>
+
+            
+            <h3 id="seccion4">Entre Panes</h3>
+
+                <div class="producto">
+                    <div class="info">
+                        <h4 class="nombre">Lomito Comun</h4>
+                        <p class="descripcion">Pan, lomo, lechuga y tomate, viene con papas fritas</p>
+                        <div class="precio">$5555</div>
+                    </div>
+                    <div class="foto"></div>
+                </div>
+
+                <div class="producto">
+                    <div class="info">
+                        <h4 class="nombre">Lomito Especial</h4>
+                        <p class="descripcion">Pan, lomo, lechuga y tomate,huevo, jamon y queso, viene con papas fritas</p>
+                        <div class="precio">$5555</div>
+                    </div>
+                    <div class="foto"></div>
+                </div>
+
+                <div class="producto">
+                    <div class="info">
+                        <h4 class="nombre">Sandwich de milanesa Comun</h4>
+                        <p class="descripcion">Pan, Milanesa, lechuga y tomate, viene con papas fritas</p>
+                        <div class="precio">$5555</div>
+                    </div>
+                    <div class="foto"></div>
+                </div>
+
+                <div class="producto">
+                    <div class="info">
+                        <h4 class="nombre">Sandwich de milanesa especial</h4>
+                        <p class="descripcion">Pan, milanesa, lechuga y tomate,huevo, jamon y queso, viene con papas fritas</p>
+                        <div class="precio">$5555</div>
+                    </div>
+                    <div class="foto"></div>
+                </div>
+            <h3 id="seccion5">Pastas</h3>
+            <h3 id="seccion6">Ensaladas</h3>
+            <h3 id="seccion7">Guarniciones</h3>
+            <h3 id="seccion8">Bebibas</h3>
+            <h3 id="seccion9">Vinos</h3>
+            <h3 id="seccion10">Cervezas</h3>
+        </div>
+    </div>
+</body>
+</html>

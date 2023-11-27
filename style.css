@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Barlow'; /* Nombre que utilizarás para referenciar la fuente */
+    src: url('./assets/fonts/Barlow-Regular.woff2') format('woff2'); /* Ruta relativa a la fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+a{
+    all: unset;
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Barlow',sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    width: 100%;
+    max-width: 300px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la pantalla */
+    overflow: hidden;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.categorias {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.burbuja-container {
+    flex: 0 0 auto;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.burbuja-container p{
+    font-size: larger;
+    color: #3d3d75;
+}
+
+.burbujas {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfbfb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.svg-Burbuja {
+    max-width: 100%;
+    max-height: 100%;
+    fill: #3d3d75; /* Cambia el color de relleno según tus necesidades */
+}
+
+.ver-mas-texto {
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.informacion-deslizante {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.informacion-contenido {
+    text-align: center;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.informacion-deslizante.mostrar {
+    max-height: 80vh;
+    opacity: 1;
+}
+
+.icon-svg {
+    height: 1em; /* Ajusta la altura según tus necesidades */
+    vertical-align: middle;
+    margin-right: 5px; /* Ajusta el espacio entre el icono y el texto */
+}
+
+/* Estilos para dispositivos móviles */
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.precio {
+    flex: 0 0 auto;
+    color: #ff852a;
+    font-weight: bold;
+    padding: 2px;
+    font-size: larger;
+}
+
+.foto{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    flex: 0 0 auto;
+}
+@media (max-width: 768px) {
+    .burbuja {
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
+    }
+
+    .ver-mas {
+        padding: 10px;
+    }
+
+    .categorias {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+}
