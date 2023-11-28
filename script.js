@@ -31,7 +31,18 @@ contenedores.forEach(function (contenedor) {
         var targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
+             // Obtiene la posición actual del elemento sticky
+             var stickyElement = document.querySelector('.categorias');
+             var stickyOffset = stickyElement ? stickyElement.offsetHeight : 0;
+
+             // Calcula la posición de desplazamiento ajustada
+             var targetOffset = targetElement.offsetTop - stickyOffset;
+
+             // Realiza el desplazamiento
+             window.scrollTo({
+                 top: targetOffset,
+                 behavior: 'smooth'
+             });
         }
     });
 });
