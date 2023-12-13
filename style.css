@@ -65,6 +65,13 @@ body{
     fill: #3d3d75; /* Cambia el color de relleno según tus necesidades */
 }
 
+.comida-foto {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    background-size: cover;
+}
+
 .ver-mas-texto {
     cursor: pointer;
     text-align: center;
@@ -144,7 +151,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .5rem
+    background-size: cover;
+    background-position: center;
 }
 @media (max-width: 768px) {
     .burbuja {
